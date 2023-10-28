@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BouncyCastle.Cryptography", "BouncyCastle.Cryptography", "{4960552E-269F-4F08-A036-DD088BF80E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncyCastle.Cryptography.Utils", "BouncyCastle.Cryptography.Utils\BouncyCastle.Cryptography.Utils.csproj", "{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncyCastle.Cryptography.Utils.Test", "BouncyCastle.Cryptography.Utils.Test\BouncyCastle.Cryptography.Utils.Test.csproj", "{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-SolutionFolder", "0-SolutionFolder", "{A595947C-8392-4E5F-818D-D71941503597}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jwt", "Jwt", "{8724568C-1A3D-448D-B4B2-EB6043D63E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Utils", "Jwt.Utils\Jwt.Utils.csproj", "{AC9A0902-6399-475F-B757-34D18F98510C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Utils.Test", "Jwt.Utils.Test\Jwt.Utils.Test.csproj", "{E23A9286-8E66-414E-A0EE-11829E69FF7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-source", "1-source", "{9B0C5E89-420D-4C82-A9E4-247DD6CC0C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "openssl", "openssl", "{BD5127FE-834A-44DE-81D5-701B3A9C5E4A}"
+	ProjectSection(SolutionItems) = preProject
+		source\openssl\certificate.pfx = source\openssl\certificate.pfx
+		source\openssl\private.key = source\openssl\private.key
+		source\openssl\publickey.cer = source\openssl\publickey.cer
+		source\openssl\publickey.pem = source\openssl\publickey.pem
+		source\openssl\ReadHelp.md = source\openssl\ReadHelp.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Common.Utils", "2-Common.Utils", "{FD3522C5-C0DA-4360-B160-20699AF206CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Utils", "Common.Utils\Common.Utils.csproj", "{7BF400C3-E48B-4E16-BA8C-C049422F305E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3} = {4960552E-269F-4F08-A036-DD088BF80E16}
+		{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C} = {4960552E-269F-4F08-A036-DD088BF80E16}
+		{AC9A0902-6399-475F-B757-34D18F98510C} = {8724568C-1A3D-448D-B4B2-EB6043D63E09}
+		{E23A9286-8E66-414E-A0EE-11829E69FF7C} = {8724568C-1A3D-448D-B4B2-EB6043D63E09}
+		{BD5127FE-834A-44DE-81D5-701B3A9C5E4A} = {9B0C5E89-420D-4C82-A9E4-247DD6CC0C45}
+		{7BF400C3-E48B-4E16-BA8C-C049422F305E} = {FD3522C5-C0DA-4360-B160-20699AF206CF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF13C71-2C19-4ADE-A29D-3E9E2A1090A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDFD1C3-F0BC-436A-8ED5-9B5C3C755E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC9A0902-6399-475F-B757-34D18F98510C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9A0902-6399-475F-B757-34D18F98510C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9A0902-6399-475F-B757-34D18F98510C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9A0902-6399-475F-B757-34D18F98510C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E23A9286-8E66-414E-A0EE-11829E69FF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E23A9286-8E66-414E-A0EE-11829E69FF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E23A9286-8E66-414E-A0EE-11829E69FF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E23A9286-8E66-414E-A0EE-11829E69FF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF400C3-E48B-4E16-BA8C-C049422F305E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF400C3-E48B-4E16-BA8C-C049422F305E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF400C3-E48B-4E16-BA8C-C049422F305E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF400C3-E48B-4E16-BA8C-C049422F305E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
