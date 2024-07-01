@@ -94,5 +94,25 @@ namespace Common.Utils
                 dic.Add(key, value);
             }
         }
+        
+        /// <summary>
+        /// 获取字典集合中key对应的value，如果key不存在则返回default(TValue)
+        /// </summary>
+        /// <param name="table"></param>
+        /// <param name="key"></param>
+        /// <param name="defaultValue"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
+        public static TValue SafeGet<TKey, TValue>(this Dictionary<TKey, TValue> table, TKey key, TValue defaultValue = default(TValue))
+        {
+            if (table == null)
+                return defaultValue;
+            if (key == null)
+                return defaultValue;
+            if (!table.TryGetValue(key, out var get))
+                return defaultValue;
+            return get;
+        }
     }
 }
