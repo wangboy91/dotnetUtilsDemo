@@ -6,7 +6,7 @@ namespace Common.Utils
     public static class DictionaryUtils
     {
         /// <summary>
-        /// 
+        ///  IEnumerable 转换成dictionary 相同的key  只取第一个
         /// </summary>
         /// <param name="source"></param>
         /// <param name="keyGetter"></param>
@@ -31,7 +31,7 @@ namespace Common.Utils
         }
 
         /// <summary>
-        /// 
+        /// IEnumerable 转换成dictionary 相同的key 合并成list
         /// </summary>
         /// <param name="source"></param>
         /// <param name="keyGetter"></param>
