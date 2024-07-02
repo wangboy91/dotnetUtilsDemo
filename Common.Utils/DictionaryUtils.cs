@@ -18,6 +18,8 @@ namespace Common.Utils
         public static Dictionary<TKey, TValue> ToDictionaryEx<TElement, TKey, TValue>(this IEnumerable<TElement> source, Func<TElement, TKey> keyGetter, Func<TElement, TValue> valueGetter)
         {
             Dictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
+            if (source == null)
+                return dictionary;
             foreach (TElement item in source)
             {
                 TKey key = keyGetter(item);
@@ -43,6 +45,8 @@ namespace Common.Utils
         public static Dictionary<TKey, List<TValue>> ToDictionaryExList<TElement, TKey, TValue>(this IEnumerable<TElement> source, Func<TElement, TKey> keyGetter, Func<TElement, TValue> valueGetter)
         {
             Dictionary<TKey, List<TValue>> dictionary = new Dictionary<TKey, List<TValue>>();
+            if (source == null)
+                return dictionary;
             foreach (TElement item in source)
             {
                 TKey key = keyGetter(item);
@@ -69,7 +73,7 @@ namespace Common.Utils
         /// <returns></returns>
         public static IDictionary<TKey, TValue> AddRange<TKey, TValue>(this IDictionary<TKey, TValue> source, IEnumerable<KeyValuePair<TKey, TValue>> values)
         {
-            if (values == null)
+            if (source == null || values == null)
                 return source;
             foreach (KeyValuePair<TKey, TValue> keyValuePair in values)
                 source[keyValuePair.Key] = keyValuePair.Value;
@@ -94,7 +98,7 @@ namespace Common.Utils
                 dic.Add(key, value);
             }
         }
-        
+
         /// <summary>
         /// 获取字典集合中key对应的value，如果key不存在则返回default(TValue)
         /// </summary>
