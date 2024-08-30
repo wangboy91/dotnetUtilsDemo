@@ -100,7 +100,7 @@ namespace Common.Utils
             }
         }
         /// <summary>
-        /// 
+        /// 字典集合中新增 如果存在就不新增
         /// </summary>
         /// <param name="dic"></param>
         /// <param name="key"></param>
