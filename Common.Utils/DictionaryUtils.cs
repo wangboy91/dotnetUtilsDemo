@@ -83,11 +83,12 @@ namespace Common.Utils
         /// <summary>
         /// 字典集合中新增或更新key-value
         /// </summary>
-        /// <typeparam name="T"></typeparam>
         /// <param name="dic"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
-        public static void AddOrUpdateValue<T>(this IDictionary<string, T> dic, string key, T value)
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        public static void AddOrUpdateValue<TKey, TValue>(this IDictionary<TKey, TValue> dic, TKey key, TValue value)
         {
             if (dic.ContainsKey(key))
             {
@@ -96,6 +97,21 @@ namespace Common.Utils
             else
             {
                 dic.Add(key, value);
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dic"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        public static void AddTry<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, TValue value)
+        {
+            if (dic.ContainsKey(key))
+            {
+                dic[key] = value;
             }
         }
 
