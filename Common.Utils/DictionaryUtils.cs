@@ -109,9 +109,9 @@ namespace Common.Utils
         /// <typeparam name="TValue"></typeparam>
         public static void AddTry<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, TValue value)
         {
-            if (dic.ContainsKey(key))
+            if (!dic.ContainsKey(key))
             {
-                dic[key] = value;
+                dic.Add(key, value);
             }
         }
 
