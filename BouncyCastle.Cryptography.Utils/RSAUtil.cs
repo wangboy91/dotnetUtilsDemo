@@ -106,7 +106,7 @@ namespace BouncyCastle.Cryptography.Utils
             {
                 keyBase64 = keyBase64.Replace("\r", "").Replace("\n", "").Replace(" ", "");
                 byte[] publicInfoByte = Convert.FromBase64String(keyBase64);
-                Asn1Object pubKeyObj = Asn1Object.FromByteArray(publicInfoByte); //这里也可以从流中读取，从本地导入
+                //Asn1Object pubKeyObj = Asn1Object.FromByteArray(publicInfoByte); //这里也可以从流中读取，从本地导入
                 AsymmetricKeyParameter pubKey = PublicKeyFactory.CreateKey(publicInfoByte);
 
                 RsaKeyParameters rsaKey = (RsaKeyParameters) pubKey;
@@ -342,7 +342,7 @@ namespace BouncyCastle.Cryptography.Utils
             {
                 keyBase64 = keyBase64.Replace("\r", "").Replace("\n", "").Replace(" ", "");
                 byte[] publicInfoByte = Convert.FromBase64String(keyBase64);
-                Asn1Object pubKeyObj = Asn1Object.FromByteArray(publicInfoByte); //这里也可以从流中读取，从本地导入
+                //Asn1Object pubKeyObj = Asn1Object.FromByteArray(publicInfoByte); //这里也可以从流中读取，从本地导入
                 AsymmetricKeyParameter pubKey = PublicKeyFactory.CreateKey(publicInfoByte);
 
                 IAsymmetricBlockCipher engine = new Pkcs1Encoding(new RsaEngine());
