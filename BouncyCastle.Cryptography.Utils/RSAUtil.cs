@@ -70,7 +70,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -96,7 +96,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -123,7 +123,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -301,7 +301,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -326,7 +326,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -354,7 +354,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -380,7 +380,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -406,7 +406,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 
@@ -433,7 +433,7 @@ namespace BouncyCastle.Cryptography.Utils
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
     }
