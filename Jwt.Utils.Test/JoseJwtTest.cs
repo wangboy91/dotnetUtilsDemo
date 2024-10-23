@@ -51,8 +51,8 @@ public class JoseJwtTest
         try
         {
             var pfxFilePath = GetFilePath("certificate.pfx");
-            // 这里如果直接使用 new X509Certificate2(pfxFilePath) 只有linux 和windows 支持
-            // mac 系统可能会强制校验密码 所以使用BouncyCastle来进行封装X509CertificateLoad
+            //这里如果直接使用 new X509Certificate2(pfxFilePath) 只有linux 和windows 支持
+            //mac 系统可能会强制校验密码 所以使用BouncyCastle来进行封装X509CertificateLoad
             //var x509Cert = new X509Certificate2(pfxFilePath);
             var x509Cert = X509CertificateLoad(pfxFilePath);
             var header = new Dictionary<string, object>()
