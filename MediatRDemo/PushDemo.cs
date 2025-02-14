@@ -28,7 +28,7 @@ public class EventHandle1 : INotificationHandler<SendEvent>
 {
     public Task Handle(SendEvent notification, CancellationToken cancellationToken)
     {
-        Console.WriteLine($"EventHandle1收到新消息:{notification.Type} 登录成功了");
+        Console.WriteLine($"EventHandle1 收到新消息:{notification.Type} 登录成功了");
         return Task.CompletedTask;
     }
 }
@@ -36,7 +36,7 @@ public class EventHandle2 : INotificationHandler<SendEvent>
 {
     public Task Handle(SendEvent notification, CancellationToken cancellationToken)
     {
-        Console.WriteLine($"EventHandle1收到新消息:{notification.Type} 登录成功了");
+        Console.WriteLine($"EventHandle2 收到新消息:{notification.Type} 登录成功了");
         return Task.CompletedTask;
     }
 }
